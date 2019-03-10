@@ -1,0 +1,33 @@
+#profilePicture {
+    background: #fff;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    position: relative;
+    width: 70%;
+}
+
+#divPicture{
+    /* transform: translate(0,-50%); */
+}
+
+.user-bio {
+    margin-left: 10px;
+}
+
+.mIcons {
+    font-size: 12pt !important;
+}
+
+.name {
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.user-info {
+    font-size: 11pt;
+}
+
+.bio-details {
+    font-size: 9pt;
+    text-align: justify;
+}

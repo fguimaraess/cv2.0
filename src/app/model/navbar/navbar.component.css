@@ -1,0 +1,42 @@
+.mIcons {
+  vertical-align: middle;
+  color: dimgray;
+}
+
+.menu-item {
+  font-weight: bold;
+  color: #66757f;
+  /* margin-right: 10px; */
+  text-decoration: none;
+}
+
+.button-toggle {
+  color: #e6ecf0 !important;
+  border: 1px solid #e6ecf0 !important;
+  background-color: #e6ecf0 !important;
+}
+
+.navbar-brand img {
+  width: 25%;
+}
+
+.navbar-collapse li:hover {
+  opacity: 0.8;
+  text-decoration: none !important;
+  color: #1c94e0 !important;
+}
+
+.nav-item {
+  width: 31% !important;
+}
+
+.mr-auto {
+  width: 100%;
+}
+
+.navbar-brand {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-right: 0 !important;
+    width: 30% !important;
+}

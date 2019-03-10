@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-lg navbar-white bg-white">
+    <a class="navbar-brand" href="#">
+      <img src="../../../assets/img/logo2.png"/>
+    </a>
+  
+    <button class="navbar-toggler button-toggle" 
+            (click)="toggleNavbar()">
+            <i class="material-icons mIcons">menu</i>
+  </button>
+  
+  
+    <div class="collapse navbar-collapse"
+         [ngClass]="{ 'show': navbarOpen }">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a class="menu-item" [routerLink]='["/"]'>
+              <i class="material-icons mIcons left">home</i>
+              <span class="menu-item">Home</span>
+            </a>
+          </li>
+
+        <li class="nav-item">
+            <a class="menu-item" [routerLink]='["/"]'>
+              <i class="material-icons mIcons left">local_phone</i>
+              <span class="menu-item">Contato</span>
+            </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
