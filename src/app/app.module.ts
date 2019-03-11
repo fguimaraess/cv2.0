@@ -15,6 +15,7 @@ import { ProfileContentComponent } from './model/profile-content/profile-content
 import { SocialMediaComponent } from './model/social-media/social-media.component';
 import { LastNewsComponent } from './model/last-news/last-news.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NotFoundComponent } from './model/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { HttpClientModule } from '@angular/common/http';
     ContactComponent,
     ProfileContentComponent,
     SocialMediaComponent,
-    LastNewsComponent
+    LastNewsComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
