@@ -16,6 +16,12 @@ import { SocialMediaComponent } from './model/social-media/social-media.componen
 import { LastNewsComponent } from './model/last-news/last-news.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NotFoundComponent } from './model/not-found/not-found.component';
+import { ProfileRoutingModule } from './model/profile-content/profile-routing.module';
+
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -35,9 +41,13 @@ import { NotFoundComponent } from './model/not-found/not-found.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule,
     MaterialModule,
     HttpClientModule,
+    ProfileRoutingModule,
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
+    AngularFirestoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

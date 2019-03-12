@@ -1,4 +1,16 @@
 .list-item {
+    opacity: 0.7;
     color: #5779FF !important;
     font-weight: bold;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: none !important;
+}
+
+.router-link-active {
+    color: #0056b3;
+    border: 2px solid;
+    border-radius: 20%;
 }

@@ -1,15 +1,16 @@
 <mat-card>
   <ul class="list-inline">
     <li class="list-inline-item list-item">
-      <a class="social-icon text-xs-center" [routerLink]='["/"]'>Skills</a>
+      <a class="social-icon text-xs-center" [routerLink]='["/module/skills"]' routerLinkActive="router-link-active">Skills</a>
     </li>
     <li class="list-inline-item list-item">
-      <a class="social-icon text-xs-center" [routerLink]='["/experiences"]'>Experiências</a>
+      <a class="social-icon text-xs-center" [routerLink]='["/module/experiences"]' routerLinkActive="router-link-active">Experiências</a>
     </li>
     <li class="list-inline-item list-item">
-      <a class="social-icon text-xs-center" [routerLink]='["/projects"]'>Projetos</a>
+      <a class="social-icon text-xs-center" [routerLink]='["/module/projects"]' routerLinkActive="router-link-active">Projetos</a>
     </li>
-  </ul>
+  </ul> 
   <hr>
-  <router-outlet></router-outlet>
+  
+<router-outlet></router-outlet>
 </mat-card>
