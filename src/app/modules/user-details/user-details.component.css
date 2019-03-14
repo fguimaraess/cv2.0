@@ -18,9 +18,9 @@
     /* transform: translate(0,-50%); */
 }
 
-.user-bio {
+/* .user-bio {
     margin-left: 10px;
-}
+} */
 
 .mIcons {
     font-size: 12pt !important;
@@ -36,6 +36,6 @@
 }
 
 .bio-details {
-    font-size: 9pt;
-    text-align: justify;
+    font-size: 8pt;
+    text-align: left;
 }

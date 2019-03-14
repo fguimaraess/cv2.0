@@ -1,0 +1,16 @@
+<mat-card-content>
+  <div class="row">
+    <div class="col-md-12">
+      <div *ngFor="let skill of skillsList">
+        <div class="row skills">
+          <div class="col-md-6">{{skill.nome}}</div>
+          <div class="col-md-6">
+            <mat-progress-bar class="example-margin" [color]="primary" [mode]="mode" [value]="skill.rating"
+              [bufferValue]="100">
+            </mat-progress-bar>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</mat-card-content>
