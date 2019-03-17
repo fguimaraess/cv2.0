@@ -8,7 +8,6 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class SkillsDataService {
-  private contatoSource = new BehaviorSubject({ contato: null, key: '' });
   skillsList: Skill[];
   list;
   constructor(private db: AngularFireDatabase) {

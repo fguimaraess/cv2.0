@@ -1,0 +1,17 @@
+.title {
+    font-size: 16pt;
+    color: #212529;
+}
+
+.content {
+    font-size: 9pt;
+}
+
+.actions {
+    text-align: right;
+}
+
+.actions a {
+    text-decoration: none;
+    color: rgba(0,0,0,.87);
+}

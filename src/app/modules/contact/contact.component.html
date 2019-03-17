@@ -1,3 +1,50 @@
-<p>
-  contact works!
-</p>
+<div class="row" *ngIf="loading">
+    <div class="col-md-12" style="text-align:center;">CARREGANDO...</div>
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+</div>
+
+<div class="row" *ngIf="!loading">
+  <div class="col-md-12">
+    <form [formGroup]="contactForm" (ngSubmit)="submit()">
+      <div class="row">
+        <div class="col-md-6 form-group">
+          <input type="text" class="form-control" id="name" placeholder="Nome" formControlName="name" [ngClass]="{ 'is-invalid': submitted && f.name.errors }">
+          <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+            <div *ngIf="f.name.errors.required">Informe seu nome</div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <input type="text" class="form-control" id="email" placeholder="E-mail" formControlName="email" [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+          <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+              <div *ngIf="f.email.errors.required">Informe seu e-mail</div>
+            </div>
+        </div>
+      </div><br>
+
+      <div class="row">
+        <div class="col-md-12">
+          <input type="text" class="form-control" id="subject" placeholder="Assunto" formControlName="subject" [ngClass]="{ 'is-invalid': submitted && f.subject.errors }">
+          <div *ngIf="submitted && f.subject.errors" class="invalid-feedback">
+              <div *ngIf="f.subject.errors.required">Informe o assunto</div>
+            </div>
+        </div>
+      </div><br>
+
+      <div class="row">
+        <div class="col-md-12">
+          <textarea class="form-control" placeholder="Mensagem" formControlName="message" [ngClass]="{ 'is-invalid': submitted && f.message.errors }"></textarea>
+          <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
+              <div *ngIf="f.message.errors.required">Digite a mensagem</div>
+            </div>
+        </div>
+      </div><br>
+
+      <div class="row">
+        <div class="col-md-12" style="text-align: right;">
+          <button class="btn btn-primary" type="submit">Enviar</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

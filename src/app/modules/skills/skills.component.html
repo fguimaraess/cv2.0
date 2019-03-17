@@ -1,12 +1,17 @@
 <mat-card-content>
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12" *ngIf="!isToShowSkills">
+      <div class="col-md-12" style="text-align:center;">CARREGANDO...</div>
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    </div>
+
+    <div class="col-md-12" *ngIf="isToShowSkills">
       <div *ngFor="let skill of skillsList">
         <div class="row skills">
-          <div class="col-md-6">{{skill.nome}}</div>
-          <div class="col-md-6">
-            <mat-progress-bar class="example-margin" [color]="primary" [mode]="mode" [value]="skill.rating"
+          <div class="col-md-12">
+              <span class="skillName">{{skill.nome}}</span><mat-progress-bar class="example-margin" [color]="primary" [mode]="mode" [value]="skill.rating"
               [bufferValue]="100">
+              <span class="skillName">{{skill.nome}}</span>
             </mat-progress-bar>
           </div>
         </div>

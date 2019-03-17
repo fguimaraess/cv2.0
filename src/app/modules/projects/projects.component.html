@@ -1,3 +1,20 @@
-<p>
-  projects works!
-</p>
+<div class="col-md-12" *ngIf="!isToShowProjects">
+  <div class="col-md-12" style="text-align:center;">CARREGANDO...</div>
+  <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+</div>
+
+<mat-card *ngIf="isToShowProjects">
+  <mat-card-title class="title">Projetos</mat-card-title>
+  <mat-card *ngFor="let project of projects" class="projects-card">
+    <mat-card-title>{{project.title}}</mat-card-title>
+    <mat-card-content class="content">
+      <span>{{project.content}}</span>
+    </mat-card-content>
+    <mat-card-actions class="actions">
+        <a *ngIf="project.url" mat-button [href]="project.url" target="_blank">Demonstração</a>
+        <a *ngIf="project.repository" mat-button [href]="project.repository" target="_blank">Repositório</a>
+    </mat-card-actions>
+  </mat-card>
+
+</mat-card>
+<br>

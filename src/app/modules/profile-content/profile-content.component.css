@@ -9,8 +9,6 @@ a:hover {
     text-decoration: none !important;
 }
 
-.router-link-active {
-    color: #0056b3;
-    border: 2px solid;
-    border-radius: 20%;
+.router-link-active, .router-link-active:hover {
+    color: #66757f;
 }

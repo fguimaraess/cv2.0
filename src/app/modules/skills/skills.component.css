@@ -7,5 +7,13 @@
 }
 
 .mat-progress-bar {
-    height: 10px !important;
+    height: 18px !important;
+}
+
+.skillName {
+  z-index: 1;
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  margin-left: 5px;
 }
